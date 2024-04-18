@@ -539,7 +539,7 @@ class CatalogFieldBuilder extends CatalogController
 
                     $arrField['_dcFormat'] = [
 
-                        'label' => $arrField['_dcFormat']['label'],
+                        'label' => $arrField['_dcFormat']['label'] ?? '',
                         'sql' => "int(10) unsigned NOT NULL default '0'"
                     ];
 

@@ -416,7 +416,7 @@ class tl_catalog extends \Backend {
 
                 if ( !is_numeric( $strFieldname ) ) {
 
-                    $arrReturn[ $strFieldname ] = $arrField['title'] ?: $strFieldname;
+                    $arrReturn[ $strFieldname ] = $arrField['title'] ?? $strFieldname;
                 }
             }
         }
